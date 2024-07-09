@@ -49,4 +49,7 @@ extension ItemModelElement {
   var reviewCountText: String {
     "(" + (CUstomNumberFormatter.getDecimalPrice(reviewCount) ?? "0") + ")"
   }
+  var starRatingWeight: Double {
+    (rating * 2).rounded() / 2
+  }
 }

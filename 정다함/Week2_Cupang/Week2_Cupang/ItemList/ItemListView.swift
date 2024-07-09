@@ -60,7 +60,7 @@ struct ItemListView: View {
 
       //Star
       HStack {
-        makeStarView(rating: item.rating)
+        makeStarView(rating: item.starRatingWeight)
         Text(item.reviewCountText)
         Spacer()
       }
@@ -116,7 +116,7 @@ struct ItemListView: View {
         
         HStack {
           //Star
-          makeStarView(rating: item.rating)
+          makeStarView(rating: item.starRatingWeight)
           Text(item.reviewCountText)
           Spacer()
         }
